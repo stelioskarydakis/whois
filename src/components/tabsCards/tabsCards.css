@@ -1,0 +1,83 @@
+.tabsCards-section {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .tabsCards-section {
+    flex-direction: column;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+@media (max-width: 768px) {
+  .buttons-container {
+    flex-direction: row;
+    padding-right: 0;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+.buttons-container__btn button {
+  background-color: var(--clr-white);
+  outline: none;
+  border: none;
+  color: var(--clr-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .buttons-container__btn button {
+    min-width: 80px;
+    font-size: 1rem;
+  }
+}
+.buttons-container__btn.activetab button {
+  background-color: var(--clr-primary);
+  outline: none;
+  border: none;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+.buttons-container__btn button:hover {
+  transform: translateY(-3px);
+  transition: var(--transition);
+}
+.tabs-section_container {
+  border: solid 1px var(--clr-primary);
+  padding: 2rem;
+  width: 100%;
+}
+.tabs-section_container h3 {
+  margin-bottom: 1rem;
+}
+.tabsCards-section_container .description {
+  display: flex;
+  align-items: center;
+}
+.tabicon {
+  color: var(--clr-text);
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  background-color: var(--clr-red-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .tabicon {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+}

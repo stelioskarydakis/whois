@@ -1,0 +1,27 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    flex-direction: row;
+  }
+}
+
+.hero-section__text {
+  width: 50%;
+}
+.hero-section__slider {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .hero-section__text {
+    width: 100%;
+  }
+  .hero-section__slider {
+    width: 100%;
+  }
+}
